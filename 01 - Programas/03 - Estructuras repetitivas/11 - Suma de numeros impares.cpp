@@ -1,5 +1,5 @@
 /*		
-  Escribe un programa que calcule el valor de 1+2+3+n
+  Escribe un programa que calcule el valor de 1+3+5+n
 */  
 
 
@@ -10,25 +10,28 @@
 using namespace std;
 
 int main(){
- int maximo,resultado;
+ int maximo,resultado,resto;
  
 	// Pedimos el máximo a llegar
 	 do {
-	 cout<<"Introduzca una cifra máxima..: ";
+	 cout<<"Introduzca un numero impar maximo..: ";
 		cin>>maximo;
+		resto = maximo % 2;
+		cout<<resto;
 		
-		if (maximo <=0){
-			cout<<"Pon un máximo mayor que cero"<<endl;
+		cout<<"El resto es: "<<resto<<"\n";
+		if (resto == 0){
+			cout<<"Pon un numero impar!"<<endl;
 		}
 		
-	} while (maximo <= 0);
+	} while (resto == 0);
 		
 		
-	for (int i = 1; i<=maximo;i++){
+	for (int i = 1; i<=maximo;i+=2){
 		
 				resultado += i;
 				
-				cout<<"--------------"<<resultado<<endl;
+			    cout<<"EL INDICE ES: "<<i<<endl;
 				
 		};
 	
