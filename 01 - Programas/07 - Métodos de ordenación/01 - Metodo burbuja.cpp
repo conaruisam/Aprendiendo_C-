@@ -1,5 +1,6 @@
 /*
-   Método burbuja
+   Método burbuja, lee las variables y las compara con la del siguiente en el array, si es mayor lo va modificando,
+   así sucesivamente hasta que finalmente lo haya ordenador (el peor metodo de ordenación que hay), da muchas vueltas.
 */
 
 #include<iostream>
@@ -11,7 +12,7 @@ using namespace std;
 int main(){
 	
 	 //int array1[5] = {2,4,3,5,1};
-	 int lista[5] = {4,2,5,1,3};
+	 int lista[] = {4,2,5,1,3};
 	 int i,j, aux;
 	 
 	 
