@@ -9,14 +9,13 @@
 using namespace std;
 	
 struct Nodo{
-	  int dato;
+	  int dato; // 3
 	  Nodo *siguiente; // Reservamos el espacio en memoria para el siguiente nodo.
 };
 
 // Prototipo de funcion.
 void menu();
 void agregarPila(Nodo *&, int);
-void mostrarPila(Nodo *);
 void sacarPila(Nodo *&, int &);
 
 int main() {
@@ -40,6 +39,7 @@ void menu() {
      cin>>respuesta;
     
     switch(respuesta) {
+    	
     	case 1: 
     	   cout<<"Introduce la entrada a la pila: ";
     	    cin>>dato;
@@ -47,24 +47,26 @@ void menu() {
         agregarPila(pila, dato);
      	  break;
      case 2:
-						    while(pila != NULL) { // Mientras no sea el final de la pila.
+     	
+        while(pila != NULL) { // Mientras no sea el final de la pila.
 						    	
-											sacarPila(pila, dato);
+        sacarPila(pila, dato);
 											
-											if(pila != NULL){
-											   cout<<dato<<", ";
-											} else {
-												  cout<<dato<<"."<<endl;
-											}						    	
-						    }
+        if(pila != NULL){
+         cout<<dato<<", ";
+         } else {
+           cout<<dato<<"."<<endl;
+          }						    	
+        }
           system("pause");
-						  break;
+           break;
      case 3:
-     	   break;
+           break;
     }
     system("cls"); // limpiar pantalla
     } while (respuesta != 3);	
 }
+    
 void agregarPila(Nodo *&pila, int n){
 	
 	  Nodo *nuevo_nodo = new Nodo();  // Reservar memoria para el nodo
