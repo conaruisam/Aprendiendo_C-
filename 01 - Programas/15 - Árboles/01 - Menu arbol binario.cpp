@@ -80,9 +80,11 @@ void menu() {
 		 	case 3: 
 		 	        cout<<"\nIntroduce el numero a buscar: ";
 		 	         cin>>dato;
-		 	        busquedaNodo(arbol, dato);
+		 	        
+												busquedaNodo(arbol, dato);
+		 	        
 		 	        if(busquedaNodo(arbol, dato) == true){
-		 	        	cout<<"No ha encontrado el numero"<<endl;
+		 	        	cout<<"Ha encontrado el numero "<<dato<<endl;
 		 	        } else {
 		 	        	cout<<"No ha encontrado el numero"<<endl;
 		 	        }
@@ -108,7 +110,7 @@ void menu() {
 		  	        cin>>dato;
 		  	        
 		  	       eliminar(arbol, dato);		  	       
-		  	       cout<<"\n";
+		  	       cout<<"\nLLEGAAQUYIIIIi";
 		  	       system("pause");
 		  	break;
 		  case 8:
@@ -172,13 +174,13 @@ void mostrarArbol(Nodo *arbol, int contador) {
 
 bool busquedaNodo(Nodo *arbol, int n) { // Esta funcion sera recursiva.
 	
-	if(arbol == NULL){ // Si el arbol está vacio.
+ if(arbol == NULL){ // Si el arbol está vacio.
 		return false;
 	} else if (arbol->dato == n){ // Si el nodo por el que vamos es el dato que esta buscando devolvemos true.
 		return true;
 	}  else if (n<arbol->dato){ // Si es menor al dato por el que vamos entonces buscamos a la izquierda del arbol, si es mayor buscamos a la derecha de forma recursiva.
 	 return busquedaNodo(arbol->izq,n);
-	} else{
+	} else {
 	 return busquedaNodo(arbol->der,n);
 	}
 	
@@ -222,9 +224,10 @@ void postOrden(Nodo *arbol) { // Esta forma te muestra primero el lado izquierdo
 	
 }
 
-// Elminar un nodo del arbol
+// Eliminar un nodo del arbol
 
-void eliminar(Nodo *, int n) {
+void eliminar(Nodo *arbol, int n) {
+	
 	if (arbol == NULL){ // Si el arbol esta vacio...
 		return;
 	} else if(n < arbol->dato){ // Si el valor del dato que viene de entrada que busque por la izquierda del arbol, sino por la derecha
@@ -233,17 +236,20 @@ void eliminar(Nodo *, int n) {
 	} else if(n > arbol->dato){		
 		eliminar(arbol->der, n);
 	} else { // Si se encuentra el valor del nodo
-		eliminarNodo(arbol);
+		eliminarNodo(arbol); // FUNCION PRINCIPAL....
 	}
 }
 
 // Eliminar el nodo encontrado.
+
 void eliminarNodo(Nodo *nodoEliminar) {
 	
 	if(nodoEliminar->izq && nodoEliminar->der){ // Si el nodo tiene hijo izq y derecho
+	
 		Nodo *menor = minimo(nodoEliminar->der); // buscamos el nodo minimo de la parte izquierda
 		nodoEliminar->dato = menor->dato;  // Remplazamos el minimo por el actual
 		eliminarNodo(menor); // Y eliminamos el nodo.
+		
 	} else if(nodoEliminar->izq) { // Si el nodo a eliminar tiene un hijo izquierdo
 		reemplazar(nodoEliminar, nodoEliminar->izq);
 		borrarNodo(nodoEliminar);
