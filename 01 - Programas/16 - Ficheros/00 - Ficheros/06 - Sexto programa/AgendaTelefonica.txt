@@ -1,9 +1,0 @@
-	Agenda Telefonica
-Nombre: tuvi
-Apellido: casta¤as
-Telefono: 64512340
-------------------
-Nombre: pepe
-Apellido: caca
-Telefono: 652103415
-------------------
