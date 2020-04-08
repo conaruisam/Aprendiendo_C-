@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <conio.h>
-#include "Punto.h" // Clase
+#include "Punto.h" // Clase creada
 
 using namespace std;
 
@@ -11,6 +11,7 @@ int main(int argc, char** argv) {
 	
 	Punto p1(2,1); // Creacion de un objeto estatico (p1)
 	
+		
 	cout<<"El valor de x es :"<<p1.getX()<<endl;
 	cout<<"El valor de y es :"<<p1.getY()<<endl;
 	
