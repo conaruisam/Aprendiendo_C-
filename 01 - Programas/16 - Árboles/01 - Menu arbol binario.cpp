@@ -65,7 +65,7 @@ void menu() {
 		 cin>>opcion;
 		 
 		 switch(opcion) {
-		 	case 1:
+		  case 1:
 		 		       cout<<"\nIntroduce un numero: ";
 		 		        cin>>dato;
 		 		       insertarNodo(arbol,dato, NULL);
@@ -73,11 +73,11 @@ void menu() {
 		 		       system("pause");
 		 		break;
 		 		        
-		 	case 2: cout<<"\nMostrar el arbol completo: "<<endl;
+		  case 2: cout<<"\nMostrar el arbol completo: "<<endl;
 		 	        mostrarArbol(arbol,contador);
 		 	        system("pause");
 		 		break;
-		 	case 3: 
+		  case 3: 
 		 	        cout<<"\nIntroduce el numero a buscar: ";
 		 	         cin>>dato;
 		 	        
@@ -109,8 +109,7 @@ void menu() {
 		  	       cout<<"\nIntroduzca el nodo a borrar..";
 		  	        cin>>dato;
 		  	        
-		  	       eliminar(arbol, dato);		  	       
-		  	       cout<<"\nLLEGAAQUYIIIIi";
+		  	       eliminar(arbol, dato);		  	       		  	       
 		  	       system("pause");
 		  	break;
 		  case 8:
