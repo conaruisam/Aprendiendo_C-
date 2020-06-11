@@ -8,12 +8,13 @@
 using namespace std;
 
 int main() {
+	
 	//Declaro la variable
 	int numero1 = 0;
 	
 	// Pido al usuario el numero
 	cout<<"Introduzca el numero a comprobar: ";
-	cin>>numero1;
+	 cin>>numero1;
 	
 	
 	if (numero1%2 == 0){

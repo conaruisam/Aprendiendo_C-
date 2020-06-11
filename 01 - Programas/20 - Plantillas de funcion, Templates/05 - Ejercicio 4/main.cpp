@@ -78,6 +78,7 @@ void menu(){
 				cout<<"Se ha equivocado de numero";
 				break;			
 		}
+		fflush(stdin);
 		system("pause");
 		system("cls");
 	} while (opcion!=5);

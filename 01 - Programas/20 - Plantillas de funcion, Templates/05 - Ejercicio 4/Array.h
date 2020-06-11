@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <class T> // Declaracion de un dato generico
+template <class T> // Declaracion de un template, 
 
 class Array{
 	private:
@@ -42,7 +42,7 @@ class Array{
 		
 		void vaciarArray(){
 			for(int i=0;i<indice;i++){
-				array[i] = NULL; // Vaciar el arreglo..
+				array[i] = NULL; // Vaciar el array..
 			}
 			indice = 0; // Restaurar el indice.
 		}

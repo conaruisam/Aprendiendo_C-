@@ -38,6 +38,7 @@ void borrarNodo(Nodo *);
 Nodo *arbol = NULL;  // Inicializo el árbol.
 
 int main() {
+	
 	menu(); // LLamo a menu
 	
 	getch();

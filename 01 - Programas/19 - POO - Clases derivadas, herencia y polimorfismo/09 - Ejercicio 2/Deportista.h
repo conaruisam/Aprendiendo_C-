@@ -9,6 +9,7 @@ class Deportista{
 	private:
 		string nombreEntrenador;
 		
+		
 	public:
 		Deportista(string nombreEntrenador){
 			this->nombreEntrenador = nombreEntrenador;
