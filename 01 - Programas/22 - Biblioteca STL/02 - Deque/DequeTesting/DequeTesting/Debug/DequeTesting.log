@@ -1,0 +1,4 @@
+﻿  DequeTesting.cpp
+C:\Users\super\Desktop\Isam\01 - Personal\Estudios - Programación\02 - C ++\01 - Programas\22 - Biblioteca STL\02 - Deque\DequeTesting\DequeTesting\DequeTesting.cpp(19,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\super\Desktop\Isam\01 - Personal\Estudios - Programación\02 - C ++\01 - Programas\22 - Biblioteca STL\02 - Deque\DequeTesting\DequeTesting\DequeTesting.cpp(28,20): warning C4018: '<': no coinciden signed/unsigned
+  DequeTesting.vcxproj -> C:\Users\super\Desktop\Isam\01 - Personal\Estudios - Programación\02 - C ++\01 - Programas\22 - Biblioteca STL\02 - Deque\DequeTesting\Debug\DequeTesting.exe
